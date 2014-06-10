@@ -14,7 +14,13 @@ int menu()
     struct jogadores jogador[6];
     int opcao,records[6];
 
-    printf("\n\t Menu: \n\n \tJogar(1) \n \tSair (2)\n \tPontuacao(3)\n\tDicas(4) \n\n Escolha: ");
+    printf("********************************************************************************\n");
+    printf("\t **      *     *  *  **    *   *    **  ***   *   *   * *   *   *  \n ");
+    printf("\t*       * *    ** *  *  *    *     *    *  *  *   *   *     * * *  \n");
+    printf("\t*      * * *   * **  *  *    *     *    * *   *   *     *   *   *  \n");
+    printf("\t **   *     *  *  *  **      *      **  *  *    *     * *   *   * \n");
+    printf("********************************************************************************\n");
+    printf("\n\t\t\t Menu:\t \n\n \t\t\tJogar(1)\t \n \t\t\tSair(2)\t\n \t\t\tPontuacao(3)\t\n\t\t\tDicas(4)\t \n\n \t\t\tEscolha: ");
     scanf("%d",&opcao);
 
     switch(opcao)
