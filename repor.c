@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #define SIZE 9
 
-
-  void repor (char m[9][9])
+void repor (char m[9][9]) // Repoem as peças apos a jogada.
 {
     int i,j,x;
 
