@@ -12,7 +12,7 @@ void repor (char m[9][9]) // Repoem as peças apos a jogada.
         {
             if (m[i][j] == '.')
             {
-                x = rand() % 4;
+                x = rand() % 5;
                 switch(x)
                 {
                 case 0:
