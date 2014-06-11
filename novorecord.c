@@ -16,7 +16,7 @@ void novorecord(struct jogador jogadores[]) // Organiza o novo record apos subst
     {
         if (jogadores[5].p > jogadores[0].p)
         {
-        printf("Voce bateu o 1# colocado!");
+        printf("Voce bateu o 1# colocado!\n\n");
         i = 0;
         aux = jogadores[0];
         jogadores[0] = jogadores[5];
@@ -45,7 +45,7 @@ void novorecord(struct jogador jogadores[]) // Organiza o novo record apos subst
         }
         else if(jogadores[5].p > jogadores[1].p)
         {
-        printf("Voce bateu o 2# colocado!");
+        printf("Voce bateu o 2# colocado!\n\n");
         i = 0;
         aux = jogadores[1];
         jogadores[1] = jogadores[5];
@@ -70,7 +70,7 @@ void novorecord(struct jogador jogadores[]) // Organiza o novo record apos subst
         }
         else if(jogadores[5].p > jogadores[2].p)
         {
-        printf("Voce bateu o 3# colocado!");
+        printf("Voce bateu o 3# colocado!\n\n");
         i = 0;
         aux = jogadores[2];
         jogadores[2] = jogadores[5];
@@ -91,7 +91,7 @@ void novorecord(struct jogador jogadores[]) // Organiza o novo record apos subst
         }
         else if(jogadores[5].p > jogadores[3].p)
         {
-        printf("Voce bateu o 4# colocado!");
+        printf("Voce bateu o 4# colocado!\n\n");
         i = 0;
         aux = jogadores[3];
         jogadores[3] = jogadores[5];
@@ -108,7 +108,7 @@ void novorecord(struct jogador jogadores[]) // Organiza o novo record apos subst
         }
         else if(jogadores[5].p > jogadores[4].p)
         {
-        printf("Voce bateu o 5# colocado!");
+        printf("Voce bateu o 5# colocado!\n\n");
         i = 0;
         aux = jogadores[4];
         jogadores[4] = jogadores[5];
