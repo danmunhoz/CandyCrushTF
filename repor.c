@@ -27,6 +27,9 @@ void repor (char m[9][9]) // Repoem as peças apos a jogada.
                 case 3:
                     m[i][j] = 'R';
                     break;
+                case 4:
+                    m[i][j] = 'P':
+                    break;
                 }
 
             }
