@@ -7,20 +7,24 @@ void movimento(int l, int c, char direcao, char m[9][9])
     switch(direcao)
     {
         case 'C':
+        case 'c':
             aux = m[l-1][c];
             m[l-1][c] = m[l][c];
             m[l][c] = aux;
             break;
         case 'B':
+        case 'b':
             aux = m[l+1][c];
             m[l+1][c] = m[l][c];
             m[l][c] = aux;
             break;
+        case 'd':
         case 'D':
             aux = m[l][c+1];
             m[l][c+1] = m[l][c];
             m[l][c] = aux;
             break;
+        case 'e':
         case 'E':
             aux = m[l][c-1];
             m[l][c-1] = m[l][c];
