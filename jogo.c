@@ -2,8 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 #define SIZE 9
+#include "mostrar.h"
+#include "movimento.h"
+#include "repor.h"
+#include "pontos.h"
+#include "jogador.h"
+#include "novorecord.h"
 
-void jogo()
+void jogo(struct jogador jogadores[])
 {
     char m[SIZE][SIZE] =
     {
@@ -18,11 +24,11 @@ void jogo()
         {'.','.','.','.','.','.','.','.','.'}
     };
     char direcao;
-    int i,j,x,jogadas,pontuacao;
+    int i,j,x,jogadas;
     int l,c,z;
 
     z = 0;
-    pontuacao = 0;
+    jogadores[5].p = 0;
 
     jogadas = 20;
 
@@ -31,7 +37,7 @@ void jogo()
     {
         for(j=0; j < SIZE; j++)
         {
-            x = rand() % 4; //nunca mais usar srand(time(NULL))
+            x = rand() % 5; // Randomiza os doces.
             switch(x)
             {
             case 0:
@@ -45,6 +51,9 @@ void jogo()
                 break;
             case 3:
                 m[i][j] = 'R';
+                break;
+            case 4:
+                m[i][j] = 'P';
                 break;
             }
 
@@ -67,7 +76,7 @@ void jogo()
 
         printf("\n\n");
 
-        pontuacao = pontos(pontuacao,m);
+        jogadores[5].p = pontos(jogadores[5].p,m);
 
         mostrar(m, SIZE);
 
@@ -93,10 +102,12 @@ void jogo()
         printf("\n\n");
         mostrar(m, SIZE);
 
-        printf("\n\nSua pontuacao atual e: %d\n\n", pontuacao);
+        printf("\n\nSua pontuacao atual e: %d\n\n", jogadores[5].p);
         jogadas --;
     }
-
     printf("\n\n**** FIM DE JOGO ****\n\n");
-    printf("Sua pontuacao final foi %d\n\n",pontuacao);
+    printf("Sua pontuacao final foi %d\n\n",jogadores[5].p);
+
+    novorecord(jogadores);
+
 }
