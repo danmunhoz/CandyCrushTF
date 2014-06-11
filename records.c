@@ -4,7 +4,7 @@
 
 struct jogador jogadores[6];
 
-int records() // Leitura dos 5 melhores records do arquivo.
+int records() // Leitura dos 5 melhores records do arquivo..
 {
     FILE *record;
     int i=0;
