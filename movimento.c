@@ -4,7 +4,7 @@
 void movimento(int l, int c, char direcao, char m[9][9])
 {
     int aux;
-    switch(direcao)
+    switch(direcao) // Movimenta as peças da jogada.
     {
         case 'C':
         case 'c':
