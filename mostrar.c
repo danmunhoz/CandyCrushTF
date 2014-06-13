@@ -14,28 +14,28 @@ void mostrar(char m[SIZE][SIZE], int tam)
     const char *const purple = "\033[0;40;35m";
 
     int i,j;
-    printf("    0 1 2 3 4 5 6 7 8\n\n"); // Colunas
+    printf("     0  1  2  3  4  5  6  7  8\n\n"); // Colunas
     for(i = 0; i < tam; i++)
     {
-        printf("%s%d  %s",normal,i,normal); // Linhas
+        printf("%s%d   %s",normal,i,normal); // Linhas
         for(j = 0; j < tam; j++) // Mostra os doces
         {
             if (m[i][j] == '.')
-            printf("%s %c%s",normal, m[i][j],normal);
+            printf("%s %c %s",normal, m[i][j],normal);
             if (m[i][j] == 'Y')
-            printf("%s %c%s", yellow, m[i][j],yellow);
+            printf("%s %c %s", yellow, m[i][j],yellow);
             if (m[i][j] == 'G')
-            printf("%s %c%s", green, m[i][j],green);
+            printf("%s %c %s", green, m[i][j],green);
             if (m[i][j] == 'B')
-            printf("%s %c%s", blue, m[i][j],blue);
+            printf("%s %c %s", blue, m[i][j],blue);
             if (m[i][j] == 'R')
-            printf("%s %c%s",red, m[i][j],red);
+            printf("%s %c %s",red, m[i][j],red);
             if (m[i][j] == 'P')
-            printf("%s %c%s",purple, m[i][j],purple);
+            printf("%s %c %s",purple, m[i][j],purple);
 
         }
         printf("%s  %d%s",normal,i,normal); // Linhas
-        printf("\n");
+        printf("\n\n");
     }
     printf("%s",normal);
 }
