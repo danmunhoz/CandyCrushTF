@@ -28,6 +28,7 @@ int menu()
     case 1: //começa o jogo.
         printf("Informe seu nome: ");
         scanf("%s", jogadores[5].nome);
+        printf("\n\n");
         jogo(jogadores);
         break;
     case 2: //finaliza o jogo.
