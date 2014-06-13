@@ -38,7 +38,7 @@ int menu()
         printf("\n\n\t\tMelhores pontuacoes:\n\n");
         while (i < 5)
         {
-            printf("\t\t%s\t:\t%d\n", jogadores[i].nome, jogadores[i].p);
+            printf("\t\t%s\t:%d\n", jogadores[i].nome, jogadores[i].p);
             i++;
         }
         printf("\n\n");
