@@ -79,7 +79,7 @@ void jogo(struct jogador jogadores[])
         jogadores[5].p = pontos(jogadores[5].p,m);
 
         mostrar(m, SIZE);
-
+        printf("\n");
         while(z<9)
         {
             for (i=1; i<SIZE; i++)
