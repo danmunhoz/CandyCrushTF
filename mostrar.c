@@ -14,10 +14,10 @@ void mostrar(char m[SIZE][SIZE], int tam)
     const char *const purple = "\033[0;40;35m";
 
     int i,j;
-    printf("     0  1  2  3  4  5  6  7  8\n\n"); // Colunas
+    printf("\t\t     0  1  2  3  4  5  6  7  8\n\n"); // Colunas
     for(i = 0; i < tam; i++)
     {
-        printf("%s%d   %s",normal,i,normal); // Linhas
+        printf("\t\t%s%d   %s",normal,i,normal); // Linhas
         for(j = 0; j < tam; j++) // Mostra os doces
         {
             if (m[i][j] == '.')
