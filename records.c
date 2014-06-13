@@ -15,4 +15,6 @@ int records() // Leitura dos 5 melhores records do arquivo..
         i++;
     }
     fclose(record);
+    
+    return 0;
 }
